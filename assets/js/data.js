@@ -4,7 +4,7 @@ window.siteData = {
       category: "Revit API",
       title: "How to start creating your own Revit add in",
       description: "Creating personal Revit Add in by using python and pyRevit",
-      image: "assets/images/pyRevit.jpg"
+      image: "assets/images/pyRevit.png"
     },
     {
       category: "Architecture",
