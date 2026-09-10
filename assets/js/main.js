@@ -27,11 +27,7 @@ function renderBlogPosts() {
     const description = document.createElement("p");
     description.textContent = post.description;
 
-    const link = document.createElement("a");
-    link.href = post.url;
-    link.textContent = "Tìm hiểu thêm →";
-
-    article.append(image, category, title, description, link);
+    article.append(image, category, title, description);
     fragment.append(article);
   });
 
@@ -69,8 +65,7 @@ function renderResources() {
 
     const link = document.createElement("a");
     link.href = resource.file;
-    link.download = "";
-    link.textContent = "Tải xuống →";
+    link.textContent = "Mở tài liệu →";
 
     article.append(type, title, description, meta, link);
     fragment.append(article);
