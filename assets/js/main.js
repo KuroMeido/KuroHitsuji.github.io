@@ -65,7 +65,7 @@ function renderResources() {
 
     const link = document.createElement("a");
     link.href = resource.file;
-    link.textContent = "Mở tài liệu →";
+    link.textContent = "Open →";
 
     article.append(type, title, description, meta, link);
     fragment.append(article);
