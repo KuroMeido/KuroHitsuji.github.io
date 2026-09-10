@@ -10,8 +10,26 @@ function renderBlogPosts() {
   list.replaceChildren();
 
   posts.forEach((post) => {
+    const link = document.createElement("a");
+    link.href = post.url;
+    link.className = "post-card-link";
+    link.style.textDecoration = "none";
+    link.style.color = "inherit";
+    
     const article = document.createElement("article");
     article.className = "post-card";
+    article.style.cursor = "pointer";
+    article.style.transition = "transform 0.2s, box-shadow 0.2s";
+    
+    article.addEventListener("mouseenter", () => {
+      article.style.transform = "translateY(-4px)";
+      article.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
+    });
+    
+    article.addEventListener("mouseleave", () => {
+      article.style.transform = "translateY(0)";
+      article.style.boxShadow = "";
+    });
 
     const image = document.createElement("img");
     image.src = post.image;
@@ -28,7 +46,8 @@ function renderBlogPosts() {
     description.textContent = post.description;
 
     article.append(image, category, title, description);
-    fragment.append(article);
+    link.append(article);
+    fragment.append(link);
   });
 
   list.append(fragment);
