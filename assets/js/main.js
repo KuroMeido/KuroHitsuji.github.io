@@ -45,7 +45,13 @@ function renderBlogPosts() {
     const description = document.createElement("p");
     description.textContent = post.description;
 
-    article.append(image, category, title, description);
+    const openLink = document.createElement("a");
+    openLink.href = post.url;
+    openLink.className = "post-open-link";
+    openLink.textContent = "Open →";
+    openLink.style.textDecoration = "none";
+
+    article.append(image, category, title, description, openLink);
     link.append(article);
     fragment.append(link);
   });
