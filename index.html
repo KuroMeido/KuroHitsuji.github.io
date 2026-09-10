@@ -3,113 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KuroMeido Blog | Code & Architecture</title>
+  <title>KuroMeido | Code, Architecture & Revit Tools</title>
+  <meta
+    name="description"
+    content="Blog cá nhân về code, software architecture, automation và UI tools cho Revit/BIM."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">KuroMeido</div>
-    <nav>
-      <a href="#posts">Bài viết</a>
-      <a href="#topics">Chủ đề</a>
-      <a href="#about">Giới thiệu</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">KuroMeido</div>
+      <nav class="menu">
+        <a href="#home">Trang chủ</a>
+        <a href="#topics">Chủ đề</a>
+        <a href="#revit">Revit Tool</a>
+        <a href="#posts">Bài viết</a>
+        <a href="#about">Về tôi</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-text">
-        <span class="badge">Personal Blog</span>
-        <h1>Code, Architecture<br />& Digital Building Ideas</h1>
-        <p>
-          Blog cá nhân chia sẻ về lập trình, kiến trúc phần mềm,
-          workflow kỹ thuật, và các tool liên quan đến Revit/BIM.
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">PERSONAL BLOG • CODE • BIM • AUTOMATION</p>
+        <h1>Code, Architecture<br />& Revit Tool UI</h1>
+        <p class="hero-text">
+          Blog cá nhân chia sẻ về lập trình, software architecture, workflow kỹ thuật,
+          và các công cụ hỗ trợ Revit/BIM theo phong cách hiện đại, rõ ràng, dễ dùng.
         </p>
-        <div class="hero-buttons">
-          <a href="#posts" class="btn primary">Xem bài viết</a>
-          <a href="#about" class="btn secondary">Về tôi</a>
+        <div class="hero-actions">
+          <a href="#posts" class="btn btn-primary">Xem bài viết</a>
+          <a href="#revit" class="btn btn-secondary">Khám phá Revit Tool</a>
         </div>
       </div>
     </section>
 
-    <section id="topics" class="section">
-      <div class="section-header">
-        <h2>Chủ đề nổi bật</h2>
-        <p>Những lĩnh vực mình tập trung chia sẻ</p>
-      </div>
+    <section class="section" id="topics">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">CHỦ ĐỀ</p>
+          <h2>Những gì mình chia sẻ</h2>
+          <p>
+            Tập trung vào các nội dung thực tế cho developer, BIM specialist và người làm automation.
+          </p>
+        </div>
 
-      <div class="topics-grid">
-        <div class="topic-card">
-          <h3>Code</h3>
-          <p>JavaScript, Python, automation, tool building.</p>
-        </div>
-        <div class="topic-card">
-          <h3>Architecture</h3>
-          <p>System design, clean architecture, maintainable code.</p>
-        </div>
-        <div class="topic-card">
-          <h3>Revit / BIM</h3>
-          <p>UI tools, workflows, automation ideas cho AEC.</p>
-        </div>
-        <div class="topic-card">
-          <h3>Productivity</h3>
-          <p>Tooling, dev workflow, cách làm việc hiệu quả hơn.</p>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon">💻</span>
+            <h3>Code</h3>
+            <p>JavaScript, Python, tool building, automation script và ứng dụng thực tế.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">🏗️</span>
+            <h3>Architecture</h3>
+            <p>System design, clean architecture, maintainable code và best practices.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">🧩</span>
+            <h3>Revit / BIM</h3>
+            <p>UI tools, plugin ideas, workflow tối ưu cho AEC, BIM và Autodesk Revit.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">⚡</span>
+            <h3>Productivity</h3>
+            <p>Cách làm việc hiệu quả hơn với tooling, process, templates và automation.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="posts" class="section">
-      <div class="section-header">
-        <h2>Bài viết nổi bật</h2>
-        <p>Một vài chủ đề bạn có thể quan tâm</p>
-      </div>
-
-      <div class="posts-grid">
-        <article class="post-card">
-          <span class="tag">JavaScript</span>
-          <h3>Cách bắt đầu một website tĩnh bằng GitHub Pages</h3>
+    <section class="section alt-section" id="revit">
+      <div class="container feature">
+        <div class="feature-text">
+          <p class="section-tag">REVT TOOL UI</p>
+          <h2>Thiết kế UI cho tool Revit theo phong cách landing page hiện đại</h2>
           <p>
-            Hướng dẫn đơn giản để deploy website cá nhân miễn phí bằng GitHub.
+            Mục tiêu là biến các công cụ kỹ thuật khô khan thành trải nghiệm trực quan,
+            dễ hiểu và chuyên nghiệp hơn. Từ command launcher, parameter manager,
+            model checker cho tới dashboard workflow.
           </p>
-          <button class="read-btn" onclick="showMessage('Bài viết này sẽ sớm được cập nhật!')">Đọc thêm</button>
-        </article>
+          <ul class="feature-list">
+            <li>Giao diện rõ ràng, dễ scan</li>
+            <li>Nhấn mạnh workflow và tính ứng dụng</li>
+            <li>Phù hợp để giới thiệu plugin/tool cá nhân</li>
+            <li>Dễ mở rộng thành trang portfolio sản phẩm</li>
+          </ul>
+          <a href="#posts" class="btn btn-primary">Đọc case study</a>
+        </div>
 
-        <article class="post-card">
-          <span class="tag">Architecture</span>
-          <h3>Clean Architecture có thực sự cần cho project nhỏ?</h3>
-          <p>
-            Khi nào nên dùng kiến trúc phức tạp, khi nào nên giữ mọi thứ đơn giản.
-          </p>
-          <button class="read-btn" onclick="showMessage('Nội dung đang được viết!')">Đọc thêm</button>
-        </article>
-
-        <article class="post-card">
-          <span class="tag">Revit</span>
-          <h3>Ý tưởng UI cho tool Revit hiện đại và dễ dùng</h3>
-          <p>
-            Cách thiết kế giao diện tool kỹ thuật theo phong cách product page hiện đại.
-          </p>
-          <button class="read-btn" onclick="showMessage('Bài viết demo giao diện tool Revit!')">Đọc thêm</button>
-        </article>
+        <div class="feature-panel">
+          <div class="panel-card">
+            <div class="panel-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="panel-body">
+              <div class="mini-badge">Revit UI Tool</div>
+              <h3>Smart BIM Workflow</h3>
+              <p>
+                Tối ưu thao tác lặp, gom nhóm command, highlight task chính và
+                trình bày tính năng theo dạng product showcase.
+              </p>
+              <div class="mini-stats">
+                <div>
+                  <strong>12+</strong>
+                  <span>Tool ideas</span>
+                </div>
+                <div>
+                  <strong>UI</strong>
+                  <span>Modern style</span>
+                </div>
+                <div>
+                  <strong>BIM</strong>
+                  <span>Workflow focus</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="section-header">
+    <section class="section" id="posts">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">BÀI VIẾT</p>
+          <h2>Bài viết nổi bật</h2>
+          <p>Một vài chủ đề tiêu biểu bạn có thể phát triển tiếp trên blog.</p>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card">
+            <span class="post-category">JavaScript</span>
+            <h3>Cách bắt đầu một website tĩnh bằng GitHub Pages</h3>
+            <p>Hướng dẫn từ repo đầu tiên đến deploy website cá nhân miễn phí.</p>
+            <a href="#">Đọc thêm →</a>
+          </article>
+
+          <article class="post-card">
+            <span class="post-category">Architecture</span>
+            <h3>Clean Architecture cho internal tools và automation app</h3>
+            <p>Tổ chức code dễ bảo trì khi tool ngày càng lớn và nhiều tính năng.</p>
+            <a href="#">Đọc thêm →</a>
+          </article>
+
+          <article class="post-card">
+            <span class="post-category">Revit / BIM</span>
+            <h3>Thiết kế UI cho plugin Revit dễ dùng hơn</h3>
+            <p>Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.</p>
+            <a href="#">Đọc thêm →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-box">
         <h2>Về tôi</h2>
+        <p>
+          Mình viết về code, software architecture, Revit/BIM workflow và cách xây dựng tool hữu ích.
+          Mục tiêu là tạo ra các giải pháp vừa kỹ thuật, vừa có trải nghiệm UI tốt.
+        </p>
       </div>
-      <p>
-        Mình là người yêu thích code, kiến trúc phần mềm, UI hiện đại
-        và các giải pháp hỗ trợ workflow kỹ thuật như Revit/BIM tools.
-        Blog này là nơi mình lưu lại ý tưởng, kinh nghiệm và các thử nghiệm cá nhân.
-      </p>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 KuroMeido Blog. Built with GitHub Pages.</p>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 KuroMeido. Built with GitHub Pages.</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
