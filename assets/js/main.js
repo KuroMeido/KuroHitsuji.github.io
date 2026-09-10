@@ -15,7 +15,7 @@ function renderBlogPosts() {
     link.className = "post-card-link";
     link.style.textDecoration = "none";
     link.style.color = "inherit";
-    link.textContent = "Open →";
+
     
     const article = document.createElement("article");
     article.className = "post-card";
