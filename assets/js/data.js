@@ -4,19 +4,22 @@ window.siteData = {
       category: "Revit API",
       title: "How to start creating your own Revit add in",
       description: "Creating personal Revit Add in by using python and pyRevit",
-      image: "assets/images/pyRevit.png"
+      image: "assets/images/pyRevit.png",
+      url: "posts/revit-addon-guide.html"
     },
     {
       category: "Architecture",
       title: "Clean Architecture cho internal tools và automation app",
       description: "Tổ chức code dễ bảo trì khi tool ngày càng lớn và nhiều tính năng.",
-      image: "assets/images/post-2.jpg"
+      image: "assets/images/post-2.jpg",
+      url: "posts/clean-architecture.html"
     },
     {
       category: "Revit / BIM",
       title: "Thiết kế UI cho plugin Revit dễ dùng hơn",
       description: "Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.",
-      image: "assets/images/post-3.jpg"
+      image: "assets/images/post-3.jpg",
+      url: "posts/revit-ui-design.html"
     }
   ],
   resources: [
