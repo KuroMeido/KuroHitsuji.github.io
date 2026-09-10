@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KuroMeido | Blog</title>
+  <meta
+    name="description"
+    content="Danh sách bài viết nổi bật về JavaScript, architecture, automation và Revit/BIM."
+  />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body data-page="blog">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">KuroMeido</a>
+      <nav class="menu" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="is-active" href="blog.html">Blog</a>
+        <a href="resources.html">Tài nguyên</a>
+        <a href="about.html">Về tôi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="section-tag">BLOG</p>
+        <h1>Bài viết nổi bật</h1>
+        <p>
+          Không gian riêng cho các chủ đề về code, clean architecture, UI tools và Revit/BIM workflow.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="blog-post-list" class="post-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span data-current-year>2026</span> KuroMeido. Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
