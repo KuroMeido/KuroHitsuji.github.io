@@ -1,10 +1,10 @@
 window.siteData = {
   blogPosts: [
     {
-      category: "JavaScript",
-      title: "Cách bắt đầu một website tĩnh bằng GitHub Pages",
-      description: "Hướng dẫn từ repo đầu tiên đến deploy website cá nhân miễn phí.",
-      image: "assets/images/post-1.jpg"
+      category: "Revit API",
+      title: "How to start creating your own Revit add in",
+      description: "Creating personal Revit Add in by using python and pyRevit",
+      image: "assets/images/pyRevit.jpg"
     },
     {
       category: "Architecture",
