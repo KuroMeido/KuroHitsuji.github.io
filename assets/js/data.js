@@ -4,19 +4,22 @@ window.siteData = {
       category: "JavaScript",
       title: "Cách bắt đầu một website tĩnh bằng GitHub Pages",
       description: "Hướng dẫn từ repo đầu tiên đến deploy website cá nhân miễn phí.",
-      image: "assets/images/post-1.jpg"
+      image: "assets/images/post-1.jpg",
+      url: "resources.html"
     },
     {
       category: "Architecture",
       title: "Clean Architecture cho internal tools và automation app",
       description: "Tổ chức code dễ bảo trì khi tool ngày càng lớn và nhiều tính năng.",
-      image: "assets/images/post-2.jpg"
+      image: "assets/images/post-2.jpg",
+      url: "about.html"
     },
     {
       category: "Revit / BIM",
       title: "Thiết kế UI cho plugin Revit dễ dùng hơn",
       description: "Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.",
-      image: "assets/images/post-3.jpg"
+      image: "assets/images/post-3.jpg",
+      url: "resources.html"
     }
   ],
   resources: [

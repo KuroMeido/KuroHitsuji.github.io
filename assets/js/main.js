@@ -28,7 +28,7 @@ function renderBlogPosts() {
     description.textContent = post.description;
 
     const link = document.createElement("a");
-    link.href = "about.html";
+    link.href = post.url;
     link.textContent = "Tìm hiểu thêm →";
 
     article.append(image, category, title, description, link);
