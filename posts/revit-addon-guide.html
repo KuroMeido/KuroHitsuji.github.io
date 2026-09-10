@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revit Add-in Guide for Beginner | KuroMeido Blog</title>
+  <meta name="description" content="Hướng dẫn beginner tạo tool Revit đầu tiên bằng pyRevit." />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">KuroMeido</a>
+      <nav class="nav-links">
+        <a href="index.html#posts">Bài viết</a>
+        <a href="index.html#library">Tài nguyên</a>
+        <a href="index.html#about">Giới thiệu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article-page">
+    <section class="article-hero">
+      <div class="container narrow">
+        <span class="badge">Beginner Guide</span>
+        <h1>Revit Add-in Guide for Beginner by using pyRevit</h1>
+        <p class="article-lead">
+          Nếu bạn muốn bắt đầu tạo tool cho Revit nhưng chưa sẵn sàng đi thẳng vào C# add-in,
+          thì pyRevit là con đường rất dễ tiếp cận để prototype nhanh và học workflow.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow article-content">
+        <h2>1. pyRevit là gì?</h2>
+        <p>
+          pyRevit là một môi trường giúp bạn viết các tool chạy trong Revit bằng Python.
+          Nó phù hợp cho automation, utility nhỏ, UI cơ bản, và thử nghiệm ý tưởng nhanh.
+        </p>
+
+        <h2>2. Khi nào nên dùng pyRevit?</h2>
+        <ul>
+          <li>Khi bạn muốn làm tool nội bộ nhanh.</li>
+          <li>Khi cần thử ý tưởng trước khi viết add-in chính thức.</li>
+          <li>Khi muốn học Revit API theo cách dễ tiếp cận hơn.</li>
+        </ul>
+
+        <h2>3. Cấu trúc extension cơ bản</h2>
+        <p>Một extension pyRevit thường có dạng:</p>
+        <pre><code>MyExtension.extension/
+└── MyTools.tab/
+    └── Demo.panel/
+        └── Hello.pushbutton/
+            ├── script.py
+            └── icon.png</code></pre>
+
+        <h2>4. Script đầu tiên</h2>
+        <p>Tạo file <code>script.py</code>:</p>
+        <pre><code>from pyrevit import script
+
+output = script.get_output()
+output.print_md("# Hello from pyRevit")
+output.print_md("Đây là tool đầu tiên của bạn trong Revit.")</code></pre>
+
+        <h2>5. Những thứ beginner nên học tiếp</h2>
+        <ul>
+          <li>Document, UIDocument, Selection</li>
+          <li>FilteredElementCollector</li>
+          <li>Transaction</li>
+          <li>Forms/UI cơ bản</li>
+          <li>Tổ chức tool theo tab/panel/button</li>
+        </ul>
+
+        <h2>6. Lộ trình đề xuất</h2>
+        <ol>
+          <li>Làm tool chỉ đọc dữ liệu</li>
+          <li>Làm tool chọn element</li>
+          <li>Làm tool chỉnh sửa parameter với transaction</li>
+          <li>Thêm UI chọn option</li>
+          <li>Tách common functions để tái sử dụng</li>
+        </ol>
+
+        <h2>7. Kết luận</h2>
+        <p>
+          pyRevit rất phù hợp để bắt đầu. Khi bạn hiểu rõ workflow, API, và pattern tổ chức code,
+          bạn có thể tiến lên những add-in lớn hơn với kiến trúc tốt hơn.
+        </p>
+
+        <div class="article-cta">
+          <a class="btn btn-primary" href="index.html">← Quay lại trang chủ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 KuroMeido Blog. Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
