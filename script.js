@@ -1,3 +1,3 @@
 function showMessage() {
-  alert("Your GitHub Pages site works!");
+  alert("Hello from GitHub Pages!");
 }
