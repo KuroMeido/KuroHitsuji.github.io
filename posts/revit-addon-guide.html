@@ -13,11 +13,11 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="logo">KuroMeido</a>
+      <a href="/index.html" class="logo">KuroMeido</a>
       <nav class="nav-links">
-        <a href="index.html#posts">Bài viết</a>
-        <a href="index.html#library">Tài nguyên</a>
-        <a href="index.html#about">Giới thiệu</a>
+        <a href="/index.html#posts">Bài viết</a>
+        <a href="/index.html#library">Tài nguyên</a>
+        <a href="/index.html#about">Giới thiệu</a>
       </nav>
     </div>
   </header>
@@ -52,19 +52,19 @@
         <h2>3. Cấu trúc extension cơ bản</h2>
         <p>Một extension pyRevit thường có dạng:</p>
         <pre><code>MyExtension.extension/
-└── MyTools.tab/
-    └── Demo.panel/
-        └── Hello.pushbutton/
-            ├── script.py
-            └── icon.png</code></pre>
+                                └── MyTools.tab/
+                                    └── Demo.panel/
+                                        └── Hello.pushbutton/
+                                            ├── script.py
+                                            └── icon.png</code></pre>
 
         <h2>4. Script đầu tiên</h2>
         <p>Tạo file <code>script.py</code>:</p>
         <pre><code>from pyrevit import script
 
-output = script.get_output()
-output.print_md("# Hello from pyRevit")
-output.print_md("Đây là tool đầu tiên của bạn trong Revit.")</code></pre>
+                    output = script.get_output()
+                    output.print_md("# Hello from pyRevit")
+                    output.print_md("Đây là tool đầu tiên của bạn trong Revit.")</code></pre>
 
         <h2>5. Những thứ beginner nên học tiếp</h2>
         <ul>
@@ -91,7 +91,7 @@ output.print_md("Đây là tool đầu tiên của bạn trong Revit.")</code></
         </p>
 
         <div class="article-cta">
-          <a class="btn btn-primary" href="index.html">← Quay lại trang chủ</a>
+          <a class="btn btn-primary" href="/index.html">← Quay lại trang chủ</a>
         </div>
       </div>
     </section>
