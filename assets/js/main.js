@@ -132,7 +132,7 @@ function setupBlogSearch() {
   });
 }
 
-renderBlogPosts();
+// renderBlogPosts();
 renderResources();
 setupBlogSearch();
 updateCurrentYear();
