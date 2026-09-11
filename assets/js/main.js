@@ -1,6 +1,6 @@
-function renderBlogPosts() {
+function renderBlogPosts(postsToRender) {
   const list = document.getElementById("blog-post-list");
-  const posts = window.siteData?.blogPosts;
+  const posts = Array.isArray(postsToRender) ? postsToRender : window.siteData?.blogPosts;
 
   if (!list || !Array.isArray(posts)) {
     return;
@@ -16,17 +16,16 @@ function renderBlogPosts() {
     link.style.textDecoration = "none";
     link.style.color = "inherit";
 
-    
     const article = document.createElement("article");
     article.className = "post-card";
     article.style.cursor = "pointer";
     article.style.transition = "transform 0.2s, box-shadow 0.2s";
-    
+
     article.addEventListener("mouseenter", () => {
       article.style.transform = "translateY(-4px)";
       article.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
     });
-    
+
     article.addEventListener("mouseleave", () => {
       article.style.transform = "translateY(0)";
       article.style.boxShadow = "";
@@ -107,6 +106,32 @@ function updateCurrentYear() {
   });
 }
 
+function setupBlogSearch() {
+  const input = document.getElementById("blog-search");
+  const allPosts = window.siteData?.blogPosts;
+
+  if (!input || !Array.isArray(allPosts)) {
+    return;
+  }
+
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+
+    if (!query) {
+      renderBlogPosts(allPosts);
+      return;
+    }
+
+    const filtered = allPosts.filter((post) => {
+      const haystack = `${post.title} ${post.category} ${post.description}`.toLowerCase();
+      return haystack.includes(query);
+    });
+
+    renderBlogPosts(filtered);
+  });
+}
+
 renderBlogPosts();
 renderResources();
+setupBlogSearch();
 updateCurrentYear();

@@ -212,6 +212,26 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.blog-search-wrap {
+  margin-bottom: 20px;
+}
+
+.blog-search-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.blog-search-input {
+  width: 100%;
+  max-width: 560px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--text);
+}
+
 @media (max-width: 640px) {
   .hero h1,
   .page-hero h1 {

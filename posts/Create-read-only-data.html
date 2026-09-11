@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Revit Add-in Guide for Beginner | KuroMeido Blog</title>
+        <meta name="description" content="Create a read-only data tool in Revit using pyRevit" />
+        <link rel="stylesheet" href="/assets/css/base.css" />
+        <link rel="stylesheet" href="/assets/css/layout.css" />
+        <link rel="stylesheet" href="/assets/css/components.css" />
+        <link rel="stylesheet" href="/assets/css/pages.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container nav">
+                <a href="/index.html" class="logo">KuroMeido</a>
+                <nav class="nav-links">
+                    <a href="/index.html#posts">Blogs</a>
+                    <a href="/index.html#library">Resources</a>
+                    <a href="/index.html#about">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="article-page">
+            <section class="article-hero">
+                <div class="container narrow">
+                    <span class="badge">Beginner Guide</span>
+                    <h1>Revit Add-in Guide for Beginner by using pyRevit</h1>
+                    <p class="article-lead">
+                        If you want to start creating tools for Revit but are not ready to dive straight into C# add-ins,
+                        pyRevit is a very accessible way to quickly prototype and learn the workflow.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container narrow article-content">
+                    <h2>1. What is pyRevit?</h2>
+                    <p>
+                        pyRevit is an environment that allows you to write tools that run in Revit using Python.
+                        It is suitable for automation, small utilities, basic UI, and quickly testing ideas.
+                    </p>
+
+                    <h2>2. When to use pyRevit?</h2>
+                    <ul>
+                        <li>When you want to quickly create internal tools.</li>
+                        <li>When you need to test ideas before writing the official add-in.</li>
+                        <li>When you want to learn the Revit API in a more accessible way.</li>
+                    </ul>
+
+                    <h2>3. Basic extension structure</h2>
+                    <p>A pyRevit extension typically looks like this:</p>
+                    <pre><code>MyExtension.extension/
+                 └── MyTools.tab/
+                     └── Demo.panel/
+                         └── Hello.pushbutton/
+                                   ├── script.py
+                                   └── icon.png</code></pre>
+
+                    <h2>4. First script</h2>
+                    <p>Create a file named <code>script.py</code>:</p>
+                    <pre><code>from pyrevit import script
+
+                        output = script.get_output()
+                        output.print_md("# Hello from pyRevit")
+                        output.print_md("This is your first tool in Revit.")</code></pre>
+
+                    <h2>5. What beginners should learn next</h2>
+                    <ul>
+                        <li>Document, UIDocument, Selection</li>
+                        <li>FilteredElementCollector</li>
+                        <li>Transaction</li>
+                        <li>Basic Forms/UI</li>
+                        <li>Organizing tools by tab/panel/button</li>
+                    </ul>
+
+                    <h2>6. Recommended roadmap</h2>
+                    <ol>
+                        <li>Create a read-only data tool</li>
+                        <li>Create a tool to select elements</li>
+                        <li>Create a tool to modify parameters with a transaction</li>
+                        <li>Add a UI to select options</li>
+                        <li>Extract common functions for reuse</li>
+                    </ol>
+
+                    <h2>7. Conclusion</h2>
+                    <p>
+                        pyRevit is a great starting point. Once you understand the workflow, API, and code organization patterns,
+                        you can move on to larger add-ins with better architecture.
+                    </p>
+
+                    <div class="article-cta">
+                        <a class="btn btn-primary" href="/index.html">← Back to homepage</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <p>© 2026 KuroMeido Blog. Built with GitHub Pages.</p>
+            </div>
+        </footer>
+
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
