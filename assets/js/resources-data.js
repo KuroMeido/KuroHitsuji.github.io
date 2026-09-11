@@ -26,14 +26,14 @@ window.siteData.resources = [
     type: "PDF",
     title: "Don't Make Me Think",
     description: "A practical usability guide focused on intuitive navigation and interaction.",
-    file: "assets/pdf/Steve-Krug-Don't-Make-Me-Think.pdf",
+    file: "assets/pdf/Steve-Krug-Dont-Make-Me-Think.pdf",
     meta: "• 1 file PDF"
   },
   {
     type: "PDF",
     title: "The Design of Everyday Things",
     description: "Foundational design principles for usable and human-centered products.",
-    file: "assets/pdf/The-Design-of-Everyday-Things.pdf",
+    file: "assets/pdf/The-Design-Of-Everyday-Things.pdf",
     meta: "• 1 file PDF"
   }
 ];
