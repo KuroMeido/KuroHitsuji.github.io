@@ -12,90 +12,82 @@
     </head>
 
     <body>
-        <header class="site-header">
-            <div class="container nav">
-                <a class="brand" href="./index.html">Kuro Hitsuji</a>
-                <nav class="menu" aria-label="Main navigation">
-                    <a class="is-active" href="../index.html">Home</a>
-                    <a href="../blog.html">Blog</a>
-                    <a href="../resources.html">Resources</a>
-                    <a href="../about.html">About</a>
-                </nav>
-            </div>
+        <header id="site-header" class="site-header">
         </header>
 
-        <main class="article-page">
-            <section class="article-hero">
-                <div class="container narrow">
-                    <span class="badge">Beginner Guide</span>
-                    <h1>Create a read-only data tool</h1>
-                    <p class="article-lead">
-                        This post will guide you through creating a read-only data tool in Revit using pyRevit.
-                        This tool will allow users to view data without the ability to modify it, ensuring data integrity and security.
-                    </p>
-                </div>
-            </section>
+            <main class="article-page">
+                <section class="article-hero">
+                    <div class="container narrow">
+                        <span class="badge">Beginner Guide</span>
+                        <h1>Create a read-only data tool</h1>
+                        <p class="article-lead">
+                            This post will guide you through creating a read-only data tool in Revit using pyRevit.
+                            This tool will allow users to view data without the ability to modify it, ensuring data integrity and security.
+                        </p>
+                    </div>
+                </section>
 
-            <section class="section">
-                <div class="container narrow article-content">
-                    <h2>1. What is read-only data?</h2>
-                    <p>
-                        Read-only data refers to information that can be viewed but not modified.
-                        In the context of Revit and pyRevit, a read-only data tool allows users to access and inspect data from the Revit model without making any changes, ensuring data integrity and preventing accidental modifications.
-                    </p>
+                <section class="section">
+                    <div class="container narrow article-content">
+                        <h2>1. What is read-only data?</h2>
+                        <p>
+                            Read-only data refers to information that can be viewed but not modified.
+                            In the context of Revit and pyRevit, a read-only data tool allows users to access and inspect data from the Revit model without making any changes, ensuring data integrity and preventing accidental modifications.
+                        </p>
 
-                    <h2>2. When to use?</h2>
-                    <ul>
-                        <li>When you want to view data without the risk of modifying it.</li>
-                    </ul>
+                        <h2>2. When to use?</h2>
+                        <ul>
+                            <li>When you want to view data without the risk of modifying it.</li>
+                        </ul>
 
-                    <h2>3. How to create a read-only data tool</h2>
-                    <p>
-                        To create a read-only data tool in Revit using pyRevit, you need to set up a pyRevit extension with a tab, panel, and pushbutton.
-                        The pushbutton will run a script that accesses the Revit model data without making any modifications.
-                    </p>
+                        <h2>3. How to create a read-only data tool</h2>
+                        <p>
+                            To create a read-only data tool in Revit using pyRevit, you need to set up a pyRevit extension with a tab, panel, and pushbutton.
+                            The pushbutton will run a script that accesses the Revit model data without making any modifications.
+                        </p>
 
 
-                    <h2>4. Script to read parameters</h2>
-                    <p>Create a file named <code>script.py</code>:</p>
-                    <pre><code>
+                        <h2>4. Script to read parameters</h2>
+                        <p>Create a file named <code>script.py</code>:</p>
+                        <pre><code>
                         </code></pre>
 
-                    <h2>5. What beginners should learn next</h2>
-                    <ul>
-                        <li>Document, UIDocument, Selection</li>
-                        <li>FilteredElementCollector</li>
-                        <li>Transaction</li>
-                        <li>Basic Forms/UI</li>
-                        <li>Organizing tools by tab/panel/button</li>
-                    </ul>
+                        <h2>5. What beginners should learn next</h2>
+                        <ul>
+                            <li>Document, UIDocument, Selection</li>
+                            <li>FilteredElementCollector</li>
+                            <li>Transaction</li>
+                            <li>Basic Forms/UI</li>
+                            <li>Organizing tools by tab/panel/button</li>
+                        </ul>
 
-                    <h2>6. Recommended roadmap</h2>
-                    <ol>
-                        <li>Create a tool to select elements</li>
-                        <li>Create a tool to modify parameters with a transaction</li>
-                        <li>Add a UI to select options</li>
-                        <li>Extract common functions for reuse</li>
-                    </ol>
+                        <h2>6. Recommended roadmap</h2>
+                        <ol>
+                            <li>Create a tool to select elements</li>
+                            <li>Create a tool to modify parameters with a transaction</li>
+                            <li>Add a UI to select options</li>
+                            <li>Extract common functions for reuse</li>
+                        </ol>
 
-                    <h2>7. Conclusion</h2>
-                    <p>
+                        <h2>7. Conclusion</h2>
+                        <p>
 
-                    </p>
+                        </p>
 
-                    <div class="article-cta">
-                        <a class="btn btn-primary" href="../blog.html">← Back to blogs</a>
+                        <div class="article-cta">
+                            <a class="btn btn-primary" href="../blog.html">← Back to blogs</a>
+                        </div>
                     </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <div class="container footer-content">
+                    <p>© 2026 KuroMeido Blog. Built with GitHub Pages.</p>
                 </div>
-            </section>
-        </main>
+            </footer>
 
-        <footer class="site-footer">
-            <div class="container footer-content">
-                <p>© 2026 KuroMeido Blog. Built with GitHub Pages.</p>
-            </div>
-        </footer>
-
-        <script src="/assets/js/main.js"></script>
-    </body>
+            <script src="/assets/js/main.js"></script>
+            <script src="/assets/js/header.js"></script>
+</body>
 </html>

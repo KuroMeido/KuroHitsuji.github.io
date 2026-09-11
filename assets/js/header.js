@@ -3,7 +3,7 @@
   if (!header) return;
 
   const page = (document.body?.dataset?.page || "").toLowerCase();
-  const active = { home: "", blog: "", resources: "", about: "" };
+  const active = { home: "", blog: "", resources: "" };
 
   if (page === "post") {
     active.blog = "is-active";

@@ -1,3 +1,5 @@
+<script src="/assets/js/header.js"></script>
+
 function renderBlogPosts(postsToRender) {
   const list = document.getElementById("blog-post-list");
   const posts = Array.isArray(postsToRender) ? postsToRender : window.siteData?.blogPosts;
@@ -136,4 +138,3 @@ renderResources();
 setupBlogSearch();
 updateCurrentYear();
 
-<script src="/assets/js/header.js"></script>
