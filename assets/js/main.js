@@ -1,4 +1,3 @@
-
 function renderBlogPosts(postsToRender) {
   const list = document.getElementById("blog-post-list");
   const posts = Array.isArray(postsToRender) ? postsToRender : window.siteData?.blogPosts;
@@ -101,59 +100,59 @@ function renderResources() {
 }
 
 function RenderRevits() {
-    const list = document.getElementById("revit-list");
-    const revits = window.siteData?.revits;
+  const list = document.getElementById("revit-list");
+  const revits = window.siteData?.revits;
 
-    if (!list || !Array.isArray(revits)) {
-        return;
+  if (!list || !Array.isArray(revits)) {
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+  list.replaceChildren();
+
+  revits.forEach((revit) => {
+    const article = document.createElement("article");
+    article.className = "resource-card";
+
+    if (revit.status) {
+      const status = document.createElement("span");
+      status.className = "revit-status";
+      status.textContent = revit.status;
+      article.append(status);
     }
 
-    const fragment = document.createDocumentFragment();
-    list.replaceChildren();
+    const type = document.createElement("span");
+    type.className = "resource-type";
+    type.textContent = revit.type;
 
-    revits.forEach((revit) => {
-        const article = document.createElement("article");
-        article.className = "revit-card";
+    const title = document.createElement("h3");
+    title.textContent = revit.title;
 
-        const type = document.createElement("span");
-        type.className = "revit-type";
-        type.textContent = revit.type;
+    const description = document.createElement("p");
+    description.textContent = revit.description;
 
-        const title = document.createElement("h3");
-        title.textContent = revit.title;
+    const meta = document.createElement("p");
+    meta.className = "resource-meta";
+    meta.textContent = revit.meta;
 
-        const description = document.createElement("p");
-        description.textContent = revit.description;
+    const link = document.createElement("a");
+    link.textContent = "Open →";
 
-        const meta = document.createElement("p");
-        meta.className = "revit-meta";
-        meta.textContent = revit.meta;
+    const isComingSoon = (revit.status || "").toLowerCase() === "coming soon";
+    if (isComingSoon) {
+      link.href = "javascript:void(0)";
+      link.setAttribute("aria-disabled", "true");
+      link.classList.add("is-disabled");
+      link.addEventListener("click", (e) => e.preventDefault());
+    } else {
+      link.href = revit.file;
+    }
 
-        const link = document.createElement("a");
-        link.textContent = "Open →";
+    article.append(type, title, description, meta, link);
+    fragment.append(article);
+  });
 
-        const isComingSoon = (revit.status || "").toLowerCase() === "coming soon";
-        if (isComingSoon) {
-            link.href = "javascript:void(0)";
-            link.setAttribute("aria-disabled", "true");
-            link.classList.add("is-disabled");
-            link.addEventListener("click", (e) => e.preventDefault());
-        } else {
-            link.href = revit.file;
-        }
-
-        if (revit.status) {
-            const status = document.createElement("span");
-            status.className = "revit-status";
-            status.textContent = revit.status;
-            article.append(status);
-        }
-
-        article.append(type, title, description, meta, link);
-        fragment.append(article);
-    });
-
-    list.append(fragment);
+  list.append(fragment);
 }
 
 function updateCurrentYear() {
