@@ -8,11 +8,12 @@ window.siteData = {
       url: "posts/revit-addon-guide.html"
     },
     {
-      category: "Architecture",
-      title: "Clean Architecture cho internal tools và automation app",
-      description: "Tổ chức code dễ bảo trì khi tool ngày càng lớn và nhiều tính năng.",
-      image: "assets/images/post-2.jpg",
-      url: "posts/clean-architecture.html"
+      category: "Revit API",
+      title: "Create a read-only data tool",
+        description: "Create a tool in Revit that allows you to view data without modifying it. " +
+       "For example, you can get parameters from selected elements then list them to excel.",
+        image: "assets/images/Readonlydata.png",
+      url: "posts/Create-read-only-data.html"
     },
     {
       category: "Revit / BIM",
