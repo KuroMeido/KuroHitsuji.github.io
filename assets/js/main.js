@@ -1,4 +1,3 @@
-<script src="/assets/js/header.js"></script>
 
 function renderBlogPosts(postsToRender) {
   const list = document.getElementById("blog-post-list");
