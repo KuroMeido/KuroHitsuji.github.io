@@ -135,3 +135,5 @@ renderBlogPosts();
 renderResources();
 setupBlogSearch();
 updateCurrentYear();
+
+<script src="/assets/js/header.js"></script>
