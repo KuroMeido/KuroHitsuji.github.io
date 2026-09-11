@@ -21,22 +21,30 @@ window.siteData = {
       description: "Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.",
       image: "assets/images/post-3.jpg",
       url: "posts/revit-ui-design.html"
-    }
+        },
+
+        {
+            category: "Revit / BIM",
+            title: "Thiết kế UI cho plugin Revit dễ dùng hơn",
+            description: "Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.",
+            image: "assets/images/post-3.jpg",
+            url: "posts/revit-ui-design.html"
+        }
   ],
   resources: [
     {
       type: "PDF",
-      title: "Revit Workflow Notes",
-      description: "Tóm tắt các bước tổ chức workflow, command grouping và UI flow cho tool Revit.",
-      file: "assets/pdf/revit-workflow.pdf",
-      meta: "Tài liệu tham khảo • 1 file PDF"
+      title: "Atomic Design",
+      description: "Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner",
+      file: "assets/pdf/Atomic Design.pdf",
+      meta: " • 1 file PDF"
     },
     {
       type: "PDF",
-      title: "Architecture Notes",
-      description: "Ghi chú ngắn về cách chia module, tách trách nhiệm và duy trì code dễ bảo trì.",
-      file: "assets/pdf/architecture-notes.pdf",
-      meta: "Tài liệu tham khảo • 1 file PDF"
+        title: "Clean Architecture A Craftsman Guide to Software Structure and Design",
+        description: "Clean Architecture is essential reading for every software architect, systems analyst, system designer, and software manager -- and for any programmer who aspires to these roles or is impacted by their work.",
+        file: "assets/pdf/Clean Architecture A Craftsman Guide to Software Structure and Design.pdf",
+      meta: "• 1 file PDF"
     }
   ]
 };

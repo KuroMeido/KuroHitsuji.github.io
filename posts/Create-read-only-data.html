@@ -14,11 +14,12 @@
     <body>
         <header class="site-header">
             <div class="container nav">
-                <a href="../index.html" class="logo">KuroMeido</a>
-                <nav class="nav-links">
-                    <a href="../index.html#posts">Blogs</a>
-                    <a href="../index.html#library">Resources</a>
-                    <a href="../index.html#about">About</a>
+                <a class="brand" href="./index.html">Kuro Hitsuji</a>
+                <nav class="menu" aria-label="Main navigation">
+                    <a class="is-active" href="../index.html">Home</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="../resources.html">Resources</a>
+                    <a href="../about.html">About</a>
                 </nav>
             </div>
         </header>
@@ -29,7 +30,7 @@
                     <span class="badge">Beginner Guide</span>
                     <h1>Create a read-only data tool</h1>
                     <p class="article-lead">
-                        This post will guide you through creating a read-only data tool in Revit using pyRevit. 
+                        This post will guide you through creating a read-only data tool in Revit using pyRevit.
                         This tool will allow users to view data without the ability to modify it, ensuring data integrity and security.
                     </p>
                 </div>
@@ -39,7 +40,7 @@
                 <div class="container narrow article-content">
                     <h2>1. What is read-only data?</h2>
                     <p>
-                        Read-only data refers to information that can be viewed but not modified. 
+                        Read-only data refers to information that can be viewed but not modified.
                         In the context of Revit and pyRevit, a read-only data tool allows users to access and inspect data from the Revit model without making any changes, ensuring data integrity and preventing accidental modifications.
                     </p>
 
@@ -49,8 +50,10 @@
                     </ul>
 
                     <h2>3. How to create a read-only data tool</h2>
-                    <p>To create a read-only data tool in Revit using pyRevit, you need to set up a pyRevit extension with a tab, panel, and pushbutton. 
-                    The pushbutton will run a script that accesses the Revit model data without making any modifications.</p>
+                    <p>
+                        To create a read-only data tool in Revit using pyRevit, you need to set up a pyRevit extension with a tab, panel, and pushbutton.
+                        The pushbutton will run a script that accesses the Revit model data without making any modifications.
+                    </p>
 
 
                     <h2>4. Script to read parameters</h2>
@@ -81,7 +84,7 @@
                     </p>
 
                     <div class="article-cta">
-                        <a class="btn btn-primary" href="../index.html">← Back to homepage</a>
+                        <a class="btn btn-primary" href="../blog.html">← Back to blogs</a>
                     </div>
                 </div>
             </section>
