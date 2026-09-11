@@ -90,3 +90,9 @@
   color: #c9d6ff;
   font-weight: 700;
 }
+
+.revit-card a.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}

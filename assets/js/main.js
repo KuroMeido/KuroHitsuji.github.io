@@ -100,6 +100,62 @@ function renderResources() {
   list.append(fragment);
 }
 
+function RenderRevits() {
+    const list = document.getElementById("revit-list");
+    const revits = window.siteData?.revits;
+
+    if (!list || !Array.isArray(revits)) {
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    list.replaceChildren();
+
+    revits.forEach((revit) => {
+        const article = document.createElement("article");
+        article.className = "revit-card";
+
+        const type = document.createElement("span");
+        type.className = "revit-type";
+        type.textContent = revit.type;
+
+        const title = document.createElement("h3");
+        title.textContent = revit.title;
+
+        const description = document.createElement("p");
+        description.textContent = revit.description;
+
+        const meta = document.createElement("p");
+        meta.className = "revit-meta";
+        meta.textContent = revit.meta;
+
+        const link = document.createElement("a");
+        link.textContent = "Open →";
+
+        const isComingSoon = (revit.status || "").toLowerCase() === "coming soon";
+        if (isComingSoon) {
+            link.href = "javascript:void(0)";
+            link.setAttribute("aria-disabled", "true");
+            link.classList.add("is-disabled");
+            link.addEventListener("click", (e) => e.preventDefault());
+        } else {
+            link.href = revit.file;
+        }
+
+        if (revit.status) {
+            const status = document.createElement("span");
+            status.className = "revit-status";
+            status.textContent = revit.status;
+            article.append(status);
+        }
+
+        article.append(type, title, description, meta, link);
+        fragment.append(article);
+    });
+
+    list.append(fragment);
+}
+
 function updateCurrentYear() {
   const year = new Date().getFullYear();
   document.querySelectorAll("[data-current-year]").forEach((node) => {
@@ -132,8 +188,10 @@ function setupBlogSearch() {
   });
 }
 
-// renderBlogPosts();
+
+renderBlogPosts();
 renderResources();
+RenderRevits();
 setupBlogSearch();
 updateCurrentYear();
 

@@ -18,6 +18,7 @@
         <a class="${active.home}" href="/index.html">Home</a>
         <a class="${active.blog}" href="/blog.html">Blog</a>
         <a class="${active.resources}" href="/resources.html">Resources</a>
+        <a class="${active.revit}" href="/revit.html">Revit Tool</a>
       </nav>
     </div>
   `;

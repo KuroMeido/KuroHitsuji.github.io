@@ -14,20 +14,6 @@ window.siteData = {
         "For example, you can get parameters from selected elements then list them to excel.",
       image: "assets/images/Readonlydata.png",
       url: "posts/Create-read-only-data.html"
-    },
-    {
-      category: "Revit / BIM",
-      title: "Thiết kế UI cho plugin Revit dễ dùng hơn",
-      description: "Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.",
-      image: "assets/images/post-3.jpg",
-      url: "posts/revit-ui-design.html"
-    },
-    {
-      category: "Revit / BIM",
-      title: "Thiết kế UI cho plugin Revit dễ dùng hơn",
-      description: "Cách trình bày command, trạng thái và workflow để tăng trải nghiệm người dùng.",
-      image: "assets/images/post-3.jpg",
-      url: "posts/revit-ui-design.html"
     }
   ]
 };
